@@ -30,3 +30,15 @@ print("Give me 3 points precision division!")
 d1 = float(input("First decimal: "))
 d2 = float(input("Second decimal: "))
 print(f"\n{name}: Easy. {(d1/d2):.3f}!\n")
+
+print("All right, now is the 'main' challenge, square this!")
+
+# making the main function
+def main():
+    x = int(input("Number to be squared: "))
+    print(f"Surely {square(x)}!")
+
+def square(n):
+    return pow(n,2) # pow will square a number
+
+main() # calling the main function
