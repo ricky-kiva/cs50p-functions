@@ -1,7 +1,7 @@
 import pytest
 from calc import square
 
-# to run this pytest, run 'pytest test_calc5.py'
+# to run this pytest, run 'pytest test_calc.py'
 
 def test_square():
     assert square(2) == 4
