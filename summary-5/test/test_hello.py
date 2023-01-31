@@ -1,4 +1,4 @@
-from calc import hello
+from hello import hello
 
 def test_input():
     assert hello("Pink") == "Hello, Pink"
