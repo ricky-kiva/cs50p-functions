@@ -1,5 +1,5 @@
 import pytest
-from calc5 import square, hello
+from calc import square
 
 # to run this pytest, run 'pytest test_calc5.py'
 
@@ -17,7 +17,3 @@ def test_zero():
 def test_str():
     with pytest.raises(TypeError): # 'raises'will catch error in test file
         square("cat")
-
-def test_hello():
-    assert hello("Roger") == "Hello, Roger"
-    assert hello() == "Hello, World"
