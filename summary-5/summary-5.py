@@ -25,7 +25,8 @@ def test_square():
     except AssertionError:
         print("0 squared was not 0")
 
-# other summary is on 'test_calc5.py'
+# other summary is on the other file & folder inside 'summary-5' folder
+# to run all test in 'test' folder, run 'pytest test' or 'pytest ./summary-5/test' respectively to your current directory 
 
 if __name__ == "__main__":
     main()
