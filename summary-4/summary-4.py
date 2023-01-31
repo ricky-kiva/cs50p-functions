@@ -11,7 +11,7 @@ import sys
 
 # import '4-greet.py' that has already made inside this repository
 # and change the name using 'as'
-import greet4 as greet
+import greet
 
 # if you want to import certain component of a library
 from random import choice, randint
@@ -61,7 +61,7 @@ goodbye = greet.bye(sys.argv[1])
 while True:
     ask_exit = input("Exit? (yes to proceed) ")
     if (ask_exit.lower() == "yes"):
-        # calling some 'greet4.py' method
+        # calling some 'greet.py' method
         sys.exit(f"{goodbye}'s!")
     else:
         continue
