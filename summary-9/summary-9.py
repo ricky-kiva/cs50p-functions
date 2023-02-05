@@ -155,3 +155,16 @@ print()
 for num, i in enumerate(gryffin_stud):
     print((num+1), i)
 print()
+
+# usage of 'generator' using 'yield'
+
+def print_star():
+    n = int(input("How much star? "))
+    for s in star(n):
+        print(s)
+
+def star(n):
+    for i in range(n):
+        yield "⭐" * i # 'yield' will 'return' the value one-by-one, following the 'for' statement
+
+print_star()
