@@ -149,3 +149,9 @@ print()
 gryffin_stud = ["Hermione", "Harry", "Ron"]
 print(*[{"name": student, "house": "Gryffindor"} for student in gryffin_stud], sep=", ", end="\n")
 print()
+
+# usage of 'enumerate'
+
+for num, i in enumerate(gryffin_stud):
+    print((num+1), i)
+print()
