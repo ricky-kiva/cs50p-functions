@@ -78,3 +78,5 @@ glass: int = int(input("How much glass? ")) # 'type hints' could be called like 
 sip: str = drink(glass) # assigning return value of function to var with 'type hints'
 print(sip, end='\n')
 print()
+
+# > the implementation on 'argparse' library could be checked on meow.py
