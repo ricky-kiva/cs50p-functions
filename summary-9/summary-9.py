@@ -55,6 +55,19 @@ print()
 
 def drink(n: int) -> str: # this parameter is being 'type hints'-ed, means the argument needs to be an int
     # '->' states that it will return a 'str'
+
+    # below is a 'docstring', a convention to document a function
+    """
+    Meow n times.
+
+    : param n           : Number of times to meow
+    : type  n           : int
+    : raise TypeError   : If n is not an int
+    : return            : A string of n meows, all in one line
+    : rtype             : str
+    
+    """
+
     return "sip. " * n
 
 # install 'mypy' 'pip install mypy'
