@@ -131,3 +131,14 @@ def gryffindors(students):
 
 gryffindors(students)
 
+# filtering using 'filter'
+
+def is_gryffindor(arr):
+    return arr["house"] == "Gryffindor"
+
+gryffindors2 = filter(is_gryffindor, students) # 'filter' will take the data from the 2nd parameter, pass it as an argument for function in the 1st parameter, filtering each data by it's boolean output (True or False)
+# the function passed in the 1st argument is NOT using parentheses '()' because the 'filter' that is going to call the function
+# you can also define it using lambda expression (without is_gryffindor() function) like this:
+# filter(lambda s: s["house"] == "Gryffindor", students)
+
+print(*[student["name"] for student in sorted(gryffindors2, key=lambda s: s["name"])], sep=", ", end="\n")
