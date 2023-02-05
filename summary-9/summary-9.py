@@ -80,3 +80,15 @@ print(sip, end='\n')
 print()
 
 # > the implementation on 'argparse' library could be checked on meow.py
+
+# below is an implementation of 'unpacking'
+
+def usd_idr(sawbuck, dollar, cents):
+    return (sawbuck * 150950) + (dollar * 15095) + (cents * 7)
+
+purse = [1, 13, 89]
+wallet = {"sawbuck": 1, "dollar": 13, "cents":89}
+
+print(f"IDR in purse: {usd_idr(*purse)} Rupiah") # type '*' to unpack a list
+print(f"IDR in wallet: {usd_idr(**wallet)} Rupiah") # type '**' to unpack a dictionary
+print()
