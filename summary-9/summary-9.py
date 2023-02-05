@@ -105,3 +105,11 @@ def pos(*args, **kwargs):
 # '*args' will capture the 'non-keyworded arguments' like list, while '**kwargs' will capture 'keyworded arguments' to dictionary
 pos("Persian", "Domestic", "Sphynx", Head = "Hammerhead", Tail= "Thresher", Mouth = "Whale") # calling '*args' & '**kwargs'
 print()
+
+# usage of 'map' function
+
+def yell(*words):
+    uppercased = map(str.upper, words) # this will 'str.upper' to all value inside '*words'
+    print(*uppercased)
+
+yell('This', 'is', 'CS50', '!')
