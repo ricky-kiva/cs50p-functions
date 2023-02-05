@@ -92,3 +92,16 @@ wallet = {"sawbuck": 1, "dollar": 13, "cents":89}
 print(f"IDR in purse: {usd_idr(*purse)} Rupiah") # type '*' to unpack a list
 print(f"IDR in wallet: {usd_idr(**wallet)} Rupiah") # type '**' to unpack a dictionary
 print()
+
+# ('*args' works like 'tuple') '*args' passes 'variable number' of 'non-keyworded argument', on which the operation of a 'tuple' can be performed
+# ('**kwargs' works like 'dict') '*kwargs' passes 'number of keyword arguments dictionary', on which the operation of a 'dict' can be performed
+# user can rename the '*args' parameter name, such '*sharks'
+# same goes for '**kwargs'
+
+def pos(*args, **kwargs):
+    print("Args\t: ", args)
+    print("Kwargs\t: ", kwargs)
+
+# '*args' will capture the 'non-keyworded arguments' like list, while '**kwargs' will capture 'keyworded arguments' to dictionary
+pos("Persian", "Domestic", "Sphynx", Head = "Hammerhead", Tail= "Thresher", Mouth = "Whale") # calling '*args' & '**kwargs'
+print()
