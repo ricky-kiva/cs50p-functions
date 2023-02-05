@@ -65,7 +65,7 @@ def drink(n: int) -> str: # this parameter is being 'type hints'-ed, means the a
     : raise TypeError   : If n is not an int
     : return            : A string of n meows, all in one line
     : rtype             : str
-    
+
     """
 
     return "sip. " * n
@@ -77,3 +77,4 @@ def drink(n: int) -> str: # this parameter is being 'type hints'-ed, means the a
 glass: int = int(input("How much glass? ")) # 'type hints' could be called like this also
 sip: str = drink(glass) # assigning return value of function to var with 'type hints'
 print(sip, end='\n')
+print()
