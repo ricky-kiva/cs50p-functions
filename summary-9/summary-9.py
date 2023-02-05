@@ -113,3 +113,21 @@ def yell(*words):
     print(*uppercased)
 
 yell('This', 'is', 'CS50', '!')
+
+# usage of the pythonic 'list comprehension'
+
+def yell2(*words):
+    uppercased = [word.upper() for word in words]
+    print(*uppercased)
+
+yell2('This', 'is', "Harvard's",'CS50', '!')
+print()
+
+# filtering using 'list comprehension'
+
+def gryffindors(students):
+    gryffindors = [student["name"] for student in students if student["house"] == "Gryffindor"]
+    print(*gryffindors, sep=", ", end="\n")
+
+gryffindors(students)
+
