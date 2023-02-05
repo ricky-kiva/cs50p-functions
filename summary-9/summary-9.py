@@ -52,3 +52,15 @@ class Cat:
 cat = Cat()
 cat.meow()
 print()
+
+def drink(n: int) -> str: # this parameter is being 'type hints'-ed, means the argument needs to be an int
+    # '->' states that it will return a 'str'
+    return "sip. " * n
+
+# install 'mypy' 'pip install mypy'
+# test this with 'mypy' libraries in terminal, ex: 'mypy summary-9.py'
+# mypy could check 'type hints' error prettier
+
+glass: int = int(input("How much glass? ")) # 'type hints' could be called like this also
+sip: str = drink(glass) # assigning return value of function to var with 'type hints'
+print(sip, end='\n')
