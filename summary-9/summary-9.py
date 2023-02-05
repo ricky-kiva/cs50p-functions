@@ -93,8 +93,8 @@ print(f"IDR in purse: {usd_idr(*purse)} Rupiah") # type '*' to unpack a list
 print(f"IDR in wallet: {usd_idr(**wallet)} Rupiah") # type '**' to unpack a dictionary
 print()
 
-# ('*args' works like 'tuple') '*args' passes 'variable number' of 'non-keyworded argument', on which the operation of a 'tuple' can be performed
-# ('**kwargs' works like 'dict') '*kwargs' passes 'number of keyword arguments dictionary', on which the operation of a 'dict' can be performed
+# ('*args' works almost like 'tuple') '*args' passes 'variable number' of 'non-keyworded argument', on which the operation of a 'tuple' can be performed
+# ('**kwargs' works almost like 'dict') '*kwargs' passes 'number of keyword arguments dictionary', on which the operation of a 'dict' can be performed
 # user can rename the '*args' parameter name, such '*sharks'
 # same goes for '**kwargs'
 
@@ -142,3 +142,10 @@ gryffindors2 = filter(is_gryffindor, students) # 'filter' will take the data fro
 # filter(lambda s: s["house"] == "Gryffindor", students)
 
 print(*[student["name"] for student in sorted(gryffindors2, key=lambda s: s["name"])], sep=", ", end="\n")
+print()
+
+# usage of the pythonic 'dictionary comprehension'
+
+gryffin_stud = ["Hermione", "Harry", "Ron"]
+print(*[{"name": student, "house": "Gryffindor"} for student in gryffin_stud], sep=", ", end="\n")
+print()
