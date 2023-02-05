@@ -33,3 +33,22 @@ def withdraw(n):
 
 bank()
 print()
+
+GUN = 2 # by convention, this is a 'constant', a variable that is prohibited to be changed
+# a 'constant' needs to be capitalized
+
+for _ in range(GUN):
+    print("One, 21 Guns")
+print()
+
+class Cat:
+    MEOWS = 3 # making 'constant' for a class
+
+    def meow(self):
+        for _ in range(Cat.MEOWS): # calling 'constant' for a class
+            print("meow", end=". ")
+        print()
+
+cat = Cat()
+cat.meow()
+print()
