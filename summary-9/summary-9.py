@@ -12,3 +12,24 @@ for student in students:
 
 print(sorted(houses))
 print()
+
+# from here to several code below shows the use of 'global'
+
+balance = 0 # this intended to be a 'global' variable for several function below
+
+def bank():
+    print(f"Before\t: {balance}")
+    deposit(100)
+    withdraw(25)
+    print(f"After\t: {balance}")
+
+def deposit(n):
+    global balance # state this so the function knows it is a 'global' variable
+    balance += n
+
+def withdraw(n):
+    global balance
+    balance -= n
+
+bank()
+print()
